@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+</head>
+<script>
+    const increment = () => {
+        document.getElementById("bar").value +=1
+        if (document.getElementById("bar").value === 199){
+        }
+    }
+    document.addEventListener("mousemove", increment)
+</script>
+<body>
+    <form class="form1">
+        <label for="bar">Mueva el mouse hasta que se llene la barra color verde</label>
+        <progress name="bar" max="200" id="bar" value=""></progress>
+    </form>
+</body>
+</html>
